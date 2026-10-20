@@ -50,8 +50,8 @@ public void setAvailable(boolean available){
 
 //Display Info Method
 public void displayInfo(){
-    System.out.println("Title: " + title + " Author: " + author + " ISBN: " + 
-    isbn + " Available: " + available);
+    System.out.println("Title: '" + title + "' , Author: " + author + ", ISBN: " + 
+    isbn + ", Available: " + available);
 }
 
 }//end of public class

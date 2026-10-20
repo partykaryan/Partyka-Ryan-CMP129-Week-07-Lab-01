@@ -53,10 +53,16 @@ public boolean returnBook(Book book){
 }
 
 public void displayInfo(){
-   System.out.println();
+   System.out.println("Name: " + name + " Membership ID: " + membershipId);
    System.out.println(); 
+
+if (borrowedBooks.isEmpty()){
+   System.out.println("No Borrowed Books");
 }
-
-
-
-   }//end of public class
+else{
+   for (Book b : borrowedBooks){
+      b.displayInfo();
+   }
+}
+}
+}//end of public class
