@@ -53,14 +53,15 @@ public boolean returnBook(Book book){
 }
 
 public void displayInfo(){
-   System.out.println("Name: " + name + " Membership ID: " + membershipId);
-   System.out.println(); 
+   System.out.println("Name: " + name + ", Membership ID: " + membershipId); 
 
 if (borrowedBooks.isEmpty()){
-   System.out.println("No Borrowed Books");
+   System.out.println("Status: No Borrowed Books");
+   System.out.println();
 }
 else{
    for (Book b : borrowedBooks){
+      System.out.println("Status: Actively Borrowing ==>");
       b.displayInfo();
    }
 }

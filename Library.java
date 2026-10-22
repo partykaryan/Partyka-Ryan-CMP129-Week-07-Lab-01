@@ -67,6 +67,7 @@ public boolean returnBook(String membershipId, String isbn){
 //Method for displaying books
 public void displayBooks(){
     System.out.println();
+    System.out.println("---------------------------" + name + " BOOK INFORMATION---------------------------------");
     for (Book b : books){
         b.displayInfo();
     }

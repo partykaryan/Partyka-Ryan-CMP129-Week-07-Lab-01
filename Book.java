@@ -6,7 +6,7 @@ public class Book {
  private boolean available;
 
 
-//Constructor 
+//Constructor that receives the title, author, and ISBN
 public Book(String title, String author, String isbn){
     this.title = title;
     this.author = author;
@@ -50,7 +50,7 @@ public void setAvailable(boolean available){
 
 //Display Info Method
 public void displayInfo(){
-    System.out.println("Title: '" + title + "' , Author: " + author + ", ISBN: " + 
+    System.out.println("Title: '" + title + "', Author: " + author + ", ISBN: " + 
     isbn + ", Available: " + available);
 }
 
